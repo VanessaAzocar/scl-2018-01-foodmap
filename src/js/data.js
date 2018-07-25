@@ -53,4 +53,4 @@ const crearMarcador = (place) => {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
   });
-}
+} 
