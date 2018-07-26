@@ -3,8 +3,7 @@ window.onload = (() => {
   setTimeout(function hide() { $('#pagSplash').hide('fast');
   document.getElementById('pagApp').style.display = 'block'; }, 3000);
   
-  function onSearch(){}
-  
+  /*para que aparezca el mapa */
   initMap();
 
 });// fin de window onload
