@@ -1,4 +1,19 @@
-
+/*Primera Parte*/
+#pagSplash{
+  width: 100%;
+  height: 100%;
+}
+.imgSplash{
+  width: 95%;
+  height: 95%;
+}
+@media (min-width: 768px){
+  .imgSplash{
+    width: 100%;
+    height: 100%;
+ }
+}
+/*Segunda parte*/
 .pagApp{
   width: 100%;
   height: 100%;
@@ -21,7 +36,6 @@
   margin-top: 5%;
 }
 .carousel-indicators li {
-  
   text-indent: 0;
   margin: 0 2px;
   width: 10px;
@@ -40,30 +54,44 @@
   height: 10px;
   background-color: #ffffff;
 }
-
+@media (min-width: 768px){
+  .w-100 {
+    width: 768px;
+  }
+}
 /*Mapa*/
 .mapParagraph{
   display: inline-block;
   padding: 0%;
   margin-bottom: 0%;
   margin-top: 5%;
- 
-}
+ }
 .iconMap{
-  width: 4%;
-  
+  width: 5%;
 }
 .titleMap{
   color: rgb(65, 65, 65);
   text-align: center;
-	font-size: 13px;
+	font-size: 14px;
 	font-family:'Roboto', sans-serif;
   margin-top: 3px;
   font-weight: bold;
 }
+.colInputRestaurante{
+  text-align: center;
+}
+#inputRestaurante{
+  width: 70%;
+  height: 60%;
+  display: initial;
+  margin-bottom: 3%;
+  border-radius: 1px;
+  font-size: 13px;
+  font-family:'Roboto', sans-serif;
+}
 #mapa{
-  width: 310px; 
-  height: 350px;
-  margin-left: 10px;
-  margin-top: 0%;
+  width: 19em;
+  height: 19em;
+  margin: 0 auto 0 auto;
+  
 }
