@@ -4,6 +4,7 @@ window.onload = (() => {
   document.getElementById('pagApp').style.display = 'block'; }, 3000);
   
   function onSearch(){}
+  
   initMap();
 
 });// fin de window onload
