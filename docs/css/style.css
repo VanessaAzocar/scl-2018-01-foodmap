@@ -1,0 +1,110 @@
+/*Primera Parte*/
+
+.imgSplash{
+  margin-left: -15%;
+  width: 130%;
+  height: 130%;
+}
+
+/*Segunda parte*/
+.pagApp{
+  display:none;
+}
+.backLogo{
+  background-color: #FFB900;
+}
+.logo{
+  text-align: center;
+  padding: 0%;
+}
+.imgLogo{
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 50%;
+}
+/*para que carusel quede redondo*/
+.carrusel{
+  margin-top: 5%;
+}
+.carousel-indicators li {
+  text-indent: 0;
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  border: none;
+  border-radius: 100%;
+  line-height: 30px;
+  color: #fff;
+  background-color: #333333;
+  transition: all 0.25s ease;
+  
+}
+.carousel-indicators li.active, .carousel-indicators li:hover {
+  margin: 0 2px;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+}
+
+
+/*Mapa*/
+.mapParagraph{
+  display: inline-block;
+  padding: 0%;
+  margin-bottom: 0%;
+  margin-top: 5%;
+ }
+.iconMap{
+  width: 5%;
+}
+.titleMap{
+  color: rgb(65, 65, 65);
+  text-align: center;
+	font-size: 14px;
+	font-family:'Roboto', sans-serif;
+  margin-top: 3px;
+  font-weight: bold;
+}
+.colButtonRestaurante{
+  text-align: center;
+}
+.btn-primary{
+  width: 80%;
+  height: 60%;
+  display: initial;
+  margin-bottom: 3%;
+  border-radius: 2px;
+  font-size: 13px;
+  font-family:'Roboto', sans-serif;
+  background-color: grey;
+  border: none;
+  color: white;
+  margin-bottom: 5%;
+  margin-top: 0%;
+}
+h4{
+  font-size: 14px;
+  font-family:'Roboto', sans-serif;
+}
+#mapa{
+  width: 19em;
+  height: 19em;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 768px){
+  .imgSplash{
+    margin-left: -5%;
+    width: 110%;
+    height: 110%;
+  }
+  .titleMap{
+   font-size: 17px;
+   }
+  
+  #mapa{
+    width: 40em;
+    height: 40em;
+  }
+}
+
