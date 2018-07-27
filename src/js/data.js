@@ -1,10 +1,9 @@
 let map;
 let infowindow;
 
-const initMap=() => {
+const initMap = () => {
   // Creamos un mapa con las coordenadas actuales
-  navigator.geolocation.getCurrentPosition(function (pos) {
-
+  navigator.geolocation.getCurrentPosition(function(pos) {
     lat = pos.coords.latitude;
     lon = pos.coords.longitude;
 
@@ -16,7 +15,7 @@ const initMap=() => {
       mapTypeId: google.maps.MapTypeId.MAP
     };
 
-    map = new google.maps.Map(document.getElementById("mapa"), mapOptions);
+    map = new google.maps.Map(document.getElementById('mapa'), mapOptions);
 
     // Creamos el infowindow
     infowindow = new google.maps.InfoWindow();
@@ -31,7 +30,7 @@ const initMap=() => {
     // Creamos el servicio PlaceService y enviamos la petición.
     let service = new google.maps.places.PlacesService(map);
 
-    service.nearbySearch(request, function (results, status) {
+    service.nearbySearch(request, function(results, status) {
       if (status === google.maps.places.PlacesServiceStatus.OK) {
         for (let i = 0; i < results.length; i++) {
           crearMarcador(results[i]);
@@ -39,7 +38,7 @@ const initMap=() => {
       }
     });
   });
-}
+};
 
 const crearMarcador = (place) => {
   // Creamos un marcador
@@ -49,8 +48,8 @@ const crearMarcador = (place) => {
   });
 
   // Asignamos el evento click del marcador
-  google.maps.event.addListener(marker, 'click', function () {
+  google.maps.event.addListener(marker, 'click', function() {
     infowindow.setContent(place.name);
     infowindow.open(map, this);
   });
-} 
+};
